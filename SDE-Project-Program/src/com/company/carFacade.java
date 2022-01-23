@@ -15,11 +15,11 @@ public class carFacade {
     public carFacade(int count) {
         this.count = count;
         if (count == 0) {
-            this.state = new chooseCarState(this);
+            this.state = new chooseCarState(this, this.count);
         } else if (count == 1) {
-            this.state = new chooseColorState(this);
+            this.state = new chooseColorState(this, this.count);
         } else if (count == 2) {
-            this.state = new revealState(this);
+            this.state = new revealState(this, this.count);
         }
     }
 
