@@ -1,8 +1,8 @@
 package com.company.carVariants;
 
-import com.company.Cars;
+import com.company.Car;
 
-public class Golf implements Cars {
+public class Golf implements Car {
     @Override
     public void call() { System.out.println("Good choice the VW Golf");}
 }
