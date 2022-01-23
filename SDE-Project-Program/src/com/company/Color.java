@@ -1,5 +1,5 @@
 package com.company;
 
-public interface Car {
+public interface Color {
     void call();
 }
